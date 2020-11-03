@@ -1,21 +1,3 @@
 # Introduction {#intro}
 
-You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
-
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
-
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
-
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
-
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+The article studies the link between transport disadvantage, social exclusion, and well-being. Within these categories in the study, the responses given further identified subcategories within transport disadvantage and social exclusion while well-being is identified within a ‘Satisfaction With Life Scale’. This research was conducted in 2008 in Melbourne, Australia using household surveys for a survey deliberately targeting both advantaged and disadvantaged households. Using the results of the survey links were made between transport disadvantage, social exclusion, and well-being using structural equation modelling. This model shows negative associations between social exclusion and well-being as well as between transport disadvantage and well-being, and a positive association between transport disadvantage and social exclusion. This article draws upon several other works that attempt to address the links between transport disadvantage and social exclusion as well as other works that draw links between transport and well-being. This research provides a new methodology of analyzing the data to be able to address all three points together. Because the research shows a negative correlation between transport disadvantage and well-being it can be inferred that when a person has less accessibility to transport, their personal sense of well-being diminishes. This is true as well for social exclusion. Along with this, because social exclusion and transport disadvantage were positively correlated, there is a link that if a person has a transport disadvantage, they are more likely to experience social exclusion. Thus, with the links between these three topics, it supports the idea that there is a link between transport disadvantage, accessibility, and mental health. 
