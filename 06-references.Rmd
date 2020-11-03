@@ -1,3 +1,10 @@
-`r if (knitr::is_html_output()) '
 # References {-}
-'`
+
+Audirac, I. (2008). Accessing Transit as Universal Design. Journal of Planning Literature, 23, 4–16. https://doi.org/10.1177/0885412208318558Ciommo
+F. Di, Comendador, J., López-Lambas, E., Cherchi, E., & De Dios Ortúzar, J. (2014). Exploring the role of social capital influence variables on travel behaviour. https://doi.org/10.1016/j.tra.2014.08.018Currie
+G., & Delbosc, A. (2010). Modelling the social and psychological impacts of transport disadvantage. Transportation, 37(6), 953–966. https://doi.org/10.1007/s11116-010-9280-2Delbosc
+A., & Currie, G. (n.d.). The spatial context of transport disadvantage, social exclusion and well-being. https://doi.org/10.1016/j.jtrangeo.2011.04.005Delbosc
+A., Kroesen, M., van Wee, B., & de Haas, M. (2020). Linear, non-linear, bi-directional? Testing the nature of the relationship between mobility and satisfaction with life. Transportation, 47(4), 2049–2066. https://doi.org/10.1007/s11116-019-10060-4Ermagun
+A., & Tilahun, N. (2020). Equity of transit accessibility across Chicago. https://doi.org/10.1016/j.trd.2020.102461Horner
+M. W., & Wood, B. S. (n.d.). Capturing individuals’ food environments using flexible space-time accessibility measures. https://doi.org/10.1016/j.apgeog.2014.03.007Schwanen
+T.,Lucas, K., Akyelken, N., Cisternas Solsona, D., Carrasco, J. A., & Neutens, T. (2015). Rethinking the links between social exclusion and transport disadvantage through the lens of social capital. Transportation Research Part A: Policy and Practice, 74, 123–135. https://doi.org/10.1016/j.tra.2015.02.012
