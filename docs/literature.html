@@ -21,10 +21,10 @@
   <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
   
 
-<meta name="author" content="Yihui Xie" />
+<meta name="author" content="Emma Stucki" />
 
 
-<meta name="date" content="2020-09-30" />
+<meta name="date" content="2020-12-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -134,7 +134,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li><a href="./">A Minimal Book Example</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Abstract</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
@@ -166,7 +166,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="literature" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Literature</h1>
-<p>Here is a review of existing methods.</p>
+<p>There has been a large amount of research in recent years that discusses accessibilityas well as mobility. However, there are many different ways to define both accessibility and mobility. For example, (Currie &amp; Delbosc, 2010), (Schwanen et al., 2015), (Audirac, 2008), and (Delbosc &amp; Currie, 2011)all define accessibility in some termsof being closely linked to transport disadvantage. They particularlyfocus on transport disadvantage caused by availability of resources, the design of the transport system, or physical, emotional, or mental disadvantages. Meanwhile, (Ermagun &amp; Tilahun, 2020), and (Horner &amp; Wood, n.d.)focus on the geographic distance of things as a measure of accessibility, and the actual physicalcapability ofreaching a location within a specific distance. Even more, (Delbosc et al., 2020)comments on accessibility and mobility as being measured by a behavior and trip making, while (Ciommo et al., 2014)looks not at a specific definition of accessibility or mobility, but on different variables that can affect the travel patterns of individuals. When looking at all these different definitions of mobility and ways to analyze data it is difficult to discern which, if any, is most correct. For this research we will be analyzing accessibility along the same lines of (Ermagun &amp; Tilahun, 2020), using a gravity basedmodel to track geographic distance to a certain location, along with time,using different modes of transportation.</p>
+<p>Along with accessibility, there are certain factors that can affect mobility, as discussed by the previously mentioned articles. One variable in particular that is mentioned by (Ciommo et al., 2014), (Schwanen et al., 2015), and (Delbosc &amp; Currie, 2011)is social capital closely aligned with social exclusion. Social capital, or the amount of interaction an individual has and can draw upon in times of need is something that can help increase accessibility, by increasing access to transport resources. On the other side of that, social exclusion is closely correlated with transport disadvantage, and a much smaller accessibility. In addition to affecting accessibility, social exclusion also affects mental and emotional health, as well as perceived satisfaction with life.</p>
+<p>The analysis of well-being being connected with transport disadvantage is analyzed closely by (Currie &amp; Delbosc, 2010). The model they used to analyze the data showed negative associations between social exclusion and well-being as well as between transport disadvantage and well-being, and a positive association between transport disadvantage and social exclusion. (Delbosc et al., 2020)models the causality between satisfaction with life and mobility. They are particularly concerned with discovering whether the relationship is bidirectional, and the research and analysis conducted did support this view. Both these studies show a strong correlation between perceived well-being and mobility. Previously discussedis the relationship between mobility and social capital.</p>
+<p>What we intend to discover in this research is the direct links between accessibility to certain resources and positive mental health. Although there have been research studies previously that haveshowed general trends that connect positive mental health with well-being, we are attempting to further isolate a specific accessibility model, and identify whether accessibilitytocertain locations, particularly parks, grocery stores, and libraries,have a higher
+correlation to increased mental health than others. We will use the ideas of social exclusion, transport disadvantage, accessibility, and well-being to analyze the data and determine a possible correlation.</p>
 
 </div>
             </section>
@@ -225,20 +229,6 @@ gitbook.start({
 });
 </script>
 
-<!-- dynamically load mathjax for compatibility with self-contained -->
-<script>
-  (function () {
-    var script = document.createElement("script");
-    script.type = "text/javascript";
-    var src = "true";
-    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
-    if (location.protocol !== "file:")
-      if (/^https?:/.test(src))
-        src = src.replace(/^https?:/, '');
-    script.src = src;
-    document.getElementsByTagName("head")[0].appendChild(script);
-  })();
-</script>
 </body>
 
 </html>
