@@ -11,6 +11,6 @@ description: "This is a minimal example of using the bookdown package to write a
 ---
 
 # Abstract
-This is the abstract
+This project involves an 
 
 
