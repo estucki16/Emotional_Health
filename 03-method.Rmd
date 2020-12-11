@@ -1,3 +1,55 @@
 # Methods
 
-We describe our methods in this chapter.
+```{r setup, include=FALSE, cache = FALSE}
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
+library(osmdata)
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(tidycensus)
+library(qwraps2)
+library(knitrProgressBar)
+
+
+
+basetiles <- providers$CartoDB.Positron
+this_crs <- 2227 # EPSG:2227 - NAD83 / California zone 3 (ftUS)
+options(tigris_use_cache = TRUE)
+```
+This data analysis of this project involves two main parts. The first part is the data collection of grocery stores and their locations in Utah county. The first code to create was a code that pulled the grocery store data from open street map data source.
+```{r}
+bb <- getbb("Utah County, Utah", format_out = "polygon")
+supermarket_osm <- opq(bb) %>% #specify bounding query
+  add_osm_feature(key = "shop", value = "supermarket") %>% #specify which kinds of data we want
+  osmdata_sf() %>% # get a list of sf data frames for these tags
+  trim_osmdata(bb, exclude = TRUE)
+```
+
+The next step was to filter out the polygons from the points data in the set and then transform the polygons into points so that all the data could be the same type. We then organized the data according to their osm_id.  
+```{r}
+polygons <- supermarket_osm$osm_polygons %>% st_transform(this_crs)
+
+points_on_polygon <- supermarket_osm$osm_points %>%
+  st_transform(this_crs)
+
+supermarket <- rbind(
+  #convert polygons to centroids
+  polygons %>% st_centroid() %>%
+    select(osm_id, name),
+  # get points
+  supermarket_osm$osm_points %>%
+    st_transform(this_crs) %>%
+    filter(!(osm_id %in%
+               points_on_polygon$osm_id)) %>%
+    select(osm_id, name = brand)
+```
+
+The last part of this data analysis set was to present this data in a visual manner, which was accomplished using a leaflet tool, as shown below. 
+```{r}
+
+leaflet(supermarket %>% st_transform(4326)) %>%
+  addProviderTiles(basetiles) %>%
+  addCircleMarkers(color = "red")
+```
+
+
