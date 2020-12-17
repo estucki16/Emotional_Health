@@ -11,6 +11,6 @@ description: "This is a minimal example of using the bookdown package to write a
 ---
 
 # Abstract
-This project involves an 
+This project involve the accessibility of grocery stores. The importance of grocery stores is significant, especially when considering the concept of 'food deserts' in the United States. Food deserts are areas that do not have access to the same quantity or quality of food as most other areas in the continental United States. Another problem with these food deserts is that they commonly occur in low income areas or in areas with a high percentage of minority races. In conjunction with this, is the problem with the relationship between accessibility and mental health. Although this project does not specifically identify and quantify the scope of the mental health problem, it does involve identifying the accessibility of grocery stores for specific block groups by attribute, such as income or racial identity.  
 
 
