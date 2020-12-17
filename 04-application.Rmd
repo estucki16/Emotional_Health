@@ -1,7 +1,3 @@
-# Applications
+#Future Application
 
-Some _significant_ applications are demonstrated in this chapter.
-
-## Example one
-
-## Example two
+This project does not involve any current application, as it is still in the data analysis stage. Future continuation on this project will include analysis of the data in conjuction with mental health statistics and the correlation between mental health and accessibility. 
