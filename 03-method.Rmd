@@ -48,7 +48,7 @@ supermarket <- rbind(
 ```
 
 The last part of this data analysis set was to present this data in a visual manner, which was accomplished using a leaflet tool, as shown below. 
-```{r}
+```{r, cache = FALSE}
 
 leaflet(supermarket %>% st_transform(4326)) %>%
   addProviderTiles(basetiles) %>%
@@ -56,7 +56,7 @@ leaflet(supermarket %>% st_transform(4326)) %>%
 ```
 
 The second part of data analysis involves collecting data about block groups in the Utah County. This data comes from the Census Bureau and the first step is to draw the data and organize it according to race and income. 
-```{r}
+```{r, echo = FALSE}
 
 variables <- c(
   "population" = "B25008_001", # TOTAL POPULATION IN OCCUPIED HOUSING UNITS BY TENURE
