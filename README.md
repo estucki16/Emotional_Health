@@ -1,1 +1,4 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+Grocery Store Accessibility
+
+Grocery stores are an essential part of society living. We go there for our food needs, and the quality of grocery store largely contributes to the quality of food that we consume. As a society there are many "food desert", or areas that do not have access to quality grocery stores, and the aim of this project is to identify the specific block groups in Utah County that do have access to those grocery stores, and thus are not in a food desert, leaving those other block groups as those not within our defined accessibility range. The data analyzed is retreived from Open Street Map as well as the US Census Data. In order to run this project the R packages need are  "here, osmdata, sf, tidyverse, ggmap, leaflet, tidycensus, modelsummary, qwraps2, knitrProgressBar, and lwgeom." This paper includes a literature review of previous research done as well as future research to be accomplished using this data analysis. 
+
