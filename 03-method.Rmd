@@ -1,6 +1,6 @@
 # Methodology
 
-```{r setup, include=FALSE, cache = TRUE}
+```{r setup, include=FALSE, cache = FALSE}
 knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 library(here)
 library(osmdata)
